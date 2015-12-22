@@ -1,0 +1,38 @@
+Welcome to Baby's First Angular.js App!!
+
+You will need: node, gulp, and bundler
+First please run the following:
+
+~ bundle install
+~ bundle update
+~ npm install
+~ npm update caniuse-db
+~ run 'gulp'
+~ to stop watching: Ctrl+C
+
+
+
+
+
+Meetup API notes
+"group": {
+  "created": 1395616294000,
+  "name": "Women Who Code DC",
+  "id": 13508462,
+  "join_mode": "open",
+  "lat": 38.90999984741211,
+  "lon": -77.04000091552734,
+  "urlname": "Women-Who-Code-DC", - this is from the actual URL of meetup
+  "who": "Coders"
+},
+
+get women who code dc response 
+https://api.meetup.com/Women-Who-Code-DC?photo-host=public&sig_id=53388232&sig=cd6b462ad33bc0a4b2af74d5ec3942cae536b8e0
+
+all events from WWCDC
+https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=Women-Who-Code-DC&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming&sig_id=53388232&sig=d1d450eb751de0bd9b1690e8e6abf9e06b9bb037
+  results.name
+  results.time
+  results.event_url
+  results.venue.address_1
+  results.venue.name

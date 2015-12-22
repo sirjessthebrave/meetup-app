@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Baby's First Angular App</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.0-rc.2/angular.min.js"></script>
+    <script type="text/javascript"src="https://code.angularjs.org/1.4.0-rc.2/angular-resource.js"></script>
+        <script type="text/javascript"src="https://code.angularjs.org/1.4.0-rc.2/angular-sanitize.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body>
+  <div ng-controller="mainController">
+      <form class="getMeetupInfo">
+        <div>Enter the URL of your meetup including http://:</div>
+        <input type="url" ng-model="url.text" class="url"/>
+        <h1>{{ url.text }}</h1>
+        <button type="submit" >Get Meetup Info</button>
+      </form>
+      
+      <div>
+         <p>{{ id }}</p> 
+          <p><a href="{{ groupLink }}">{{ groupName }}</a></p> 
+          <p><img src="{{ groupPic}}"/></p>
+          <p ng-bind-html="groupDescription">{{ groupDescription }} </p>
+      </div>
+       
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "meetupapp",
+  "version": "1.0.0",
+   "author": "Jessica Bell",
+   "email":"jess.bell317@gmail.com",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sourcemaps": "~1.5.2",
+    "gulp-autoprefixer": "~3.0.1",
+    "gulp-compass": "~2.1.0",
+    "gulp-jshint": "~1.11.2",
+    "gulp-livereload": "~3.8.0",
+    "browserify": "~10.2.6",
+    "babelify": "~6.3.0",
+    "gulp-notify": "~2.2.0",
+    "vinyl-source-stream": "~1.1.0",
+    "gulp-util": "~3.0.6",
+    "yargs": "~3.25.0",
+    "express": "~4.13.1"
+  }
+}
